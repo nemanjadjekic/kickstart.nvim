@@ -714,6 +714,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'shfmt', -- Used to format shell code
+        'shellcheck', -- Used to check shell code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -777,7 +778,7 @@ require('lazy').setup({
       },
       formatters = {
         shfmt = {
-          args = { '-i', '4', 'ci', 'fn' },
+          args = { '-i', '4', '-ci', '-fn' },
         },
       },
     },

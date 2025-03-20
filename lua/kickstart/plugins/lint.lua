@@ -9,6 +9,7 @@ return {
         markdown = { 'vale' },
         clangtidy = { 'clang-tidy' },
         cpplint = { 'cpplint' },
+        shellcheck = { 'shellcheck' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
