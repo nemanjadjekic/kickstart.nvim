@@ -669,6 +669,7 @@ require('lazy').setup({
         cmake = {},
         rust_analyzer = {},
         pylsp = {},
+        shellcheck = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
