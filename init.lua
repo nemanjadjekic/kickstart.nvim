@@ -768,6 +768,7 @@ require('lazy').setup({
         }
       end,
       formatters_by_ft = {
+        html = { 'superhtml' },
         lua = { 'stylua' },
         sh = { 'shfmt' },
         -- Conform can also run multiple formatters sequentially
@@ -778,7 +779,7 @@ require('lazy').setup({
       },
       formatters = {
         shfmt = {
-          args = { '-i', '4', '-ci', '-fn' },
+          args = { '-i', '4', '-ci', '-fn', '-sr' },
         },
       },
     },
